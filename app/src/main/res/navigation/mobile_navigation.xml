@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_health">
+    <fragment
+        android:id="@+id/navigation_health"
+        android:name="pt.ipp.estg.cmu_exerciseyourself.ui.home.HomeFragment"
+        android:label="Inicío"
+        tools:layout="@layout/fragment_health" />
+    <fragment
+        android:id="@+id/navigation_exercise"
+        android:name="pt.ipp.estg.cmu_exerciseyourself.ui.exercise.ExerciseFragment"
+        android:label="Exercicío"
+        tools:layout="@layout/fragment_manual_exercise" />
+    <fragment
+        android:id="@+id/navigation_discover"
+        android:name="pt.ipp.estg.cmu_exerciseyourself.ui.discover.DiscoverFragment"
+        android:label="Descobrir ginásios"
+        tools:layout="@layout/fragment_discover" />
+    <fragment
+        android:id="@+id/navigation_comunity"
+        android:name="pt.ipp.estg.cmu_exerciseyourself.ui.comunity.ComunityFragment"
+        android:label="@string/title_comunity"
+        tools:layout="@layout/fragment_comunity" />
+    <fragment
+        android:id="@+id/navigation_automatic_exercise"
+        android:name="pt.ipp.estg.cmu_exerciseyourself.ui.exercise.AutomaticExerciseFragment"
+        android:label="@string/title_add_manual_training"
+        tools:layout="@layout/fragment_exercise"/>
+    <fragment
+        android:id="@+id/navigation_measurements"
+        android:name="pt.ipp.estg.cmu_exerciseyourself.ui.measurements.MeasurementsFragment"
+        android:label="@string/title_measurements"
+        tools:layout="@layout/fragment_measurements"/>
+    <fragment
+        android:id="@+id/navigation_userProfile"
+        android:name="pt.ipp.estg.cmu_exerciseyourself.ui.profile.ProfileFragment"
+        android:label="Meu perfil"
+        tools:layout="@layout/fragment_profile"/>
+
+    <fragment
+        android:id="@+id/navigation_addMeasurement"
+        android:name="pt.ipp.estg.cmu_exerciseyourself.ui.measurements.AddMeasurement"
+        android:label="Registar Medições"
+        tools:layout="@layout/fragment_add_measurement"/>
+    <fragment
+        android:id="@+id/navigation_addManual_Exercise"
+        android:name="pt.ipp.estg.cmu_exerciseyourself.ui.exercise.AddManualExercise"
+        android:label="Registar Atividade"
+        tools:layout="@layout/fragment_add_manual_exercise"/>
+
+</navigation>
